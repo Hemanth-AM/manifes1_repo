@@ -1,1 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
 
+<manifest>
+
+    <!-- GitHub server -->
+    <remote
+        name="github"
+        fetch="ssh://git@github.com/Hemanth-AM/"
+        review="https://github.com/Hemanth-AM/" />
+
+    <!-- Default settings for all projects -->
+    <default
+        remote="github"
+        revision="main"
+        sync-j="4"
+        sync-c="true" />
+
+    <!-- Application -->
+    <project
+        name="myprojectH1"
+        path="app"
+        revision="main"
+        groups="driver" />
+
+    <!-- Driver -->
+    <project
+        name="myprojectH2"
+        path="drivers/kernel"
+        revision="main"
+        groups="driver" />
+
+    <!-- Common library -->
+    <project
+        name="myprojectH3"
+        path="libs/common"
+        revision="main"
+        groups="screen" />
+
+    <!-- Project 4 -->
+    <project
+        name="myprojectH4"
+        path="docs"
+        revision="main"
+        groups="screen" />
+
+    <!-- Project 5 -->
+    <project
+        name="myprojectH5"
+        path="hemanth"
+        revision="main"
+        groups="personal"
+        remote="github" />
+
+</manifest>
